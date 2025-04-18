@@ -7,19 +7,19 @@ Write regular expressions for the following languages.
 '''
 
 def solution_1(string):
-	match = re.search("[a-zA-Z]+", string)
+	match = re.search(r"[a-zA-Z]+", string)
 	if match:
 		return match.group()
 	return ""
 
 def solution_2(string):
-	match = re.search("[a-z]*b", string)
+	match = re.search(r"[a-z]*b", string)
 	if match:
 		return match.group()
 	return ""
 	
 def solution_3(string):
-	match = re.search("b+(b?(ab)*)*", string)
+	match = re.search(r"b+(b?(ab)*)*", string)
 	if match:
 		return match.group()
 	return ""

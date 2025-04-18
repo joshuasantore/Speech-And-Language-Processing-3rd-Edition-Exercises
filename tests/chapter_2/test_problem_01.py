@@ -8,7 +8,7 @@ Write regular expressions for the following languages.
     3. the set of all strings from the alphabet a,b such that each a is immediately preceded by and immediately followed by a b
 '''
 
-'''@pytest.mark.parametrize("input_str,expected", [
+@pytest.mark.parametrize("input_str,expected", [
     ("aBc", "aBc")
 ])
 
@@ -26,7 +26,7 @@ def test_solution_2(input_str, expected):
     assert solution_2(input_str) == expected
     
 
-'''
+
 @pytest.mark.parametrize("input_str,expected", [
     ("babab", "babab"),
     ("babb", "babb"),
