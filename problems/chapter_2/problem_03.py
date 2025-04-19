@@ -12,4 +12,4 @@ Given some instruction subsitutes, words and adds verb endings such that it is a
 '''
 
 def solution(str):
-	return re.sub(r"^(wash|add|delet|remov|creat|start)(e)?)\b(.*)", r"\1ing\3", str)
+	return re.sub(r"^(wash|add|delet|remov|creat|start)(e)?\b(.*)", r"\1ing\3", str)
