@@ -95,3 +95,4 @@ def alignment(str1, str2):
 
 
 
+alignment('hello', 'jalapeno')
